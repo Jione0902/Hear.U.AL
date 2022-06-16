@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cafe24Ssurround";
+}
+
+@media screen and (max-width: 425px) {
+  section {
+    width: 90vw;
+    min-width: 260px;
+    height: 90vh;
+  }
+}
+@media screen and (min-width: 425px) {
+  section {
+    width: 360px;
+    height: 640px;
+  }
+}
+body {
+  height: 100vh;
+  background: rgb(255, 218, 82);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 218, 82, 1) 0%,
+    rgba(255, 244, 203, 1) 51%,
+    rgba(251, 222, 221, 1) 100%
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+article {
+  width: 100%;
+}
+
+section {
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+  color: #ffda52;
+}
+
+.buddy {
+  width: 300px;
+}
+
+.big-input {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+button,
+input {
+  font-size: 1.3rem;
+  text-align: center;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  margin-top: 1.3rem;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+  color: white;
+}
+
+input {
+  background-color: rgb(230, 230, 230);
+  width: 80%;
+}
+
+input::placeholder {
+  text-align: center;
+  color: rgb(173, 173, 173);
+}
+
+input:focus {
+  background-color: rgb(230, 230, 230);
+  color: rgb(173, 173, 173);
+  outline: none;
+}
+
+.result-btn {
+  background-color: #ffda52;
+}
+
+.comment {
+  font-size: 1.2rem;
+  margin-top: 8%;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #fbdedd;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  top: 96%;
+  left: 38%;
+  bottom: 1rem;
+  font-size: 0.9rem;
+  color: rgb(209, 209, 209);
+}
+
+span {
+  display: contents;
+}
